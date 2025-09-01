@@ -34,7 +34,7 @@ document.querySelectorAll(".qty-btn").forEach(btn => {
     let value = Number(input.value);
 
     if (btn.classList.contains("plus")) value++;
-    if (btn.classList.contains("minus") && value > 0) value--; // allow 0
+    if (btn.classList.contains("minus") && value > 0) value--; 
 
     input.value = value;
   });
@@ -85,7 +85,7 @@ if (myItemsDiv) {
     cart.forEach((item, index) => {
       const div = document.createElement("div");
       div.classList.add("cart-item");
-      div.textContent = `${item.name} - ${item.price}¥ x${item.qty}`;
+      div.textContent = `${item.name} - ${item.price}¥ x ${item.qty}`;
 
       // Add a delete button
       const deleteBtn = document.createElement("button");

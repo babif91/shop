@@ -14,7 +14,12 @@ body {
   background: linear-gradient(0deg, rgb(29, 29, 29) 0%, rgb(255, 255, 255) 100%);
   padding: 16px;
   min-height: 100vh;
-  margin: 0;
+  margin: 5px;
+  color: #303030; 
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 a {
@@ -26,18 +31,20 @@ a {
 /* =========================================================
    TYPOGRAPHY
    ========================================================= */
-h1 {
-  font-size: 1.2rem;
-  font-family: "Arial";
-}
 
 header h1 {
-  font-family: "Lacquer", system-ui;
-  font-size: 2.5rem;
+  font-family: "Bahiana", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 5rem;
   color: #303030;
   text-shadow: #bbbbbb 3px 3px 0px;
 }
-
+h1 {
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+  font-family: "Arial";
+}
 h2 {
   font-size: 1.2rem;
   margin-top: 16px;
@@ -62,7 +69,8 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 16px;
+  margin-bottom: 50px;
+  margin-top: 20px;
 }
 
 /* =========================================================
@@ -198,7 +206,14 @@ header {
   font-family: "Courier New";
   border-radius: 4px;
 }
-
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px solid #ccc;
+  font-size: 1.1rem;
+}
 /* =========================================================
    BUTTONS
    ========================================================= */
@@ -261,4 +276,3 @@ button,
   border-radius: 4px;
   font-size: 1.2rem;
 }
-
