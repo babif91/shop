@@ -5,7 +5,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-size: 1.1rem;
+  font-size: 1rem;
   
 }
 
@@ -27,25 +27,25 @@ a {
    TYPOGRAPHY
    ========================================================= */
 h1 {
-  font-size: 2rem;
+  font-size: 1.2rem;
   font-family: "Arial";
 }
 
 header h1 {
   font-family: "Lacquer", system-ui;
-  font-size: 4rem;
+  font-size: 2.5rem;
   color: #303030;
   text-shadow: #bbbbbb 3px 3px 0px;
 }
 
 h2 {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   margin-top: 16px;
   font-family: "Arial";
 }
 
 p {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 
 .price {
@@ -95,13 +95,13 @@ header {
 .nav-links li a {
   color: white;
   text-decoration: none;
-  font-size: 1.8rem;
+  font-size: 1.2rem;
 }
 
 /* Hamburger (mobile only) */
 .hamburger {
   display: none;
-  font-size: 2rem;
+  font-size: 1.5rem;
   cursor: pointer;
 }
 
@@ -165,7 +165,7 @@ header {
   backdrop-filter: blur(20px);
   color: #525252;
   text-align: center;
-  padding: 8px;
+  padding: 4px;
   border-radius: 8px;
   display: flex;
   flex-direction: column;
@@ -223,7 +223,7 @@ button,
   margin-top: 16px;
   background-color: #f54802;
   color: #fff;
-  font-size: 1.4rem;
+  font-size: 1.1rem;
 }
 #confirm-payment {
   width: 100%;
@@ -231,7 +231,7 @@ button,
   margin-top: 16px;
   background-color: #119c50;
   color: #fff;
-  font-size: 1.4rem;
+  font-size: 1.1rem;
 }
 
 #btnback {
@@ -252,5 +252,13 @@ button,
   border-radius: 4px;
   font-size: 1.2rem;
   
+}
+.qty-btn {
+  padding: 2px 6px;
+  margin: 2px;
+  background-color: #858585e7;
+  color: white;
+  border-radius: 4px;
+  font-size: 1.2rem;
 }
 
