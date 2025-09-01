@@ -1,0 +1,255 @@
+/* =========================================================
+   RESET & BASE STYLES
+   ========================================================= */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 1.1rem;
+  
+}
+
+body {
+  background: #595959;
+  background: linear-gradient(0deg, rgb(29, 29, 29) 0%, rgb(255, 255, 255) 100%);
+  padding: 16px;
+  min-height: 100vh;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #F1FDFA;
+  font-family: "Lacquer", system-ui;
+}
+
+/* =========================================================
+   TYPOGRAPHY
+   ========================================================= */
+h1 {
+  font-size: 2rem;
+  font-family: "Lacquer";
+}
+
+header h1 {
+  font-family: "Lacquer", system-ui;
+  font-size: 4rem;
+  color: #303030;
+  text-shadow: #bbbbbb 3px 3px 0px;
+}
+
+h2 {
+  font-size: 1.4rem;
+  margin-top: 16px;
+  font-family: "Lacquer", system-ui;
+}
+
+p {
+  font-size: 1.4rem;
+}
+
+.price {
+  font-size: 1.2rem;
+  margin: 0px 5px 0px 5px;
+  font-family: "Courier New";
+  font-weight: bolder;
+}
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+/* =========================================================
+   NAVIGATION BAR
+   ========================================================= */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #6e6e6e;
+  color: white;
+  padding: 0.5rem 1rem;
+  position: relative;
+  z-index: 1001;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Navigation Links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.8rem;
+}
+
+/* Hamburger (mobile only) */
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+/* =========================================================
+   RESPONSIVE NAVIGATION (MOBILE)
+   ========================================================= */
+@media (max-width: 600px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 0;
+    right: -250px;
+    height: 100%;
+    width: 250px;
+    background-color: #464646;
+    flex-direction: column;
+    padding: 2rem 1rem;
+    gap: 1.5rem;
+    transition: right 0.3s ease;
+    z-index: 1002;
+  }
+
+  .nav-links.show {
+    right: 0;
+  }
+
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    z-index: 1000;
+  }
+
+  .overlay.show {
+    opacity: 1;
+    pointer-events: all;
+  }
+}
+
+/* =========================================================
+   PRODUCT GRID
+   ========================================================= */
+#container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.boxes {
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(92, 92, 92, 0.37);
+  backdrop-filter: blur(20px);
+  color: #525252;
+  text-align: center;
+  padding: 8px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.boxes img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 8px;
+  border-radius: 8px;
+}
+
+/* =========================================================
+   CART ITEMS
+   ========================================================= */
+.item {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  font-size: 1.0rem;
+}
+
+.item-qty {
+  width: 20px;
+  font-size: 1.2rem;
+  padding: 2px;
+  margin: 1px;
+  font-family: "Courier New";
+  border-radius: 4px;
+}
+
+/* =========================================================
+   BUTTONS
+   ========================================================= */
+button,
+#btncart,
+#btnback,
+#checkout,
+#confirm-payment,
+.add-to-cart {
+  font-family: "Courier New";
+  font-weight: bolder;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Cart / Go back / Checkout / Payment Buttons */
+#btncart,
+#checkout {
+  width: 100%;
+  padding: 12px;
+  margin-top: 16px;
+  background-color: #f54802;
+  color: #fff;
+  font-size: 1.4rem;
+}
+#confirm-payment {
+  width: 100%;
+  padding: 12px;
+  margin-top: 16px;
+  background-color: #119c50;
+  color: #fff;
+  font-size: 1.4rem;
+}
+
+#btnback {
+  width: 100%;
+  padding: 12px;
+  margin-top: 16px;
+  background-color: #363636;
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+/* Add to Cart Button  */
+.add-to-cart {
+  padding: 2px 4px;
+  margin-left: 5px;
+  background-color: #28a745;
+  color: white;
+  border-radius: 4px;
+  font-size: 1.2rem;
+  
+}

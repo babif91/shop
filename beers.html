@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lacquer&family=Rubik+Distressed&display=swap" rel="stylesheet">
+    <title>Beers</title>
+</head>
+<body>
+    <header>
+         <nav class="navbar">
+  <div class="hamburger">&#9776;</div>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="mycart.html">My Cart</a></li>
+    <li><a href="checkout.html">Check out</a></li>
+  </ul>
+</nav>
+    </header>
+    <main>
+        <h1>Beers</h1><br>
+        <div id="list">
+            <div class="item" data-name="Kirin Draft Beer (large size)" data-price="800">
+                <p><b>• Kirin Draft Beer</b>
+                    <br>(large size)</p>
+                <div class="price">800¥</div>
+                <!-- Quantity selector -->
+    <button class="qty-btn minus">-</button>
+    <input type="number" class="item-qty" min="1" value="1">
+    <button class="qty-btn plus">+</button>
+    <!-- Add to cart -->
+    <button class="add-to-cart">🛒</button>
+  </div>
+</div>
+            </div>
+            <br>
+            <div class="item" data-name="Kirin Draft Beer (regular size)" data-price="600">
+                <p><b>• Kirin Draft Beer</b> 
+                    <br>(regular size)</p>
+                    <div class="price">600¥</div>
+                <!-- Quantity selector -->
+                 <button class="qty-btn minus">-</button>
+    <input type="number" class="item-qty" min="1" value="1">
+    <button class="qty-btn plus">+</button>
+    <!-- Add to cart -->
+    <button class="add-to-cart">🛒</button>
+  </div>
+</div>
+        </div>
+    </main>
+
+    <!-- Cart & Back buttons -->
+    <button id="btncart" class="btn primary">🛒</button> 
+    <button id="btnback" class="btnback">Back ↩</button> 
+
+    <script src="app.js"></script>
+</body>
+</html>
