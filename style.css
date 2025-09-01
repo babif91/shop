@@ -20,7 +20,7 @@ body {
 a {
   text-decoration: none;
   color: #F1FDFA;
-  font-family: "Lacquer", system-ui;
+  font-family: "Arial";
 }
 
 /* =========================================================
@@ -28,7 +28,7 @@ a {
    ========================================================= */
 h1 {
   font-size: 2rem;
-  font-family: "Lacquer";
+  font-family: "Arial";
 }
 
 header h1 {
@@ -41,7 +41,7 @@ header h1 {
 h2 {
   font-size: 1.4rem;
   margin-top: 16px;
-  font-family: "Lacquer", system-ui;
+  font-family: "Arial";
 }
 
 p {
@@ -253,3 +253,4 @@ button,
   font-size: 1.2rem;
   
 }
+
