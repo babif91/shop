@@ -12,7 +12,7 @@
 body {
   background: #595959;
   background: linear-gradient(0deg, rgb(29, 29, 29) 0%, rgb(255, 255, 255) 100%);
-  padding: 16px;
+  padding: 10px 20px 5px 20px;
   min-height: 100vh;
   margin: 5px;
   color: #303030; 
@@ -35,19 +35,18 @@ a {
 header h1 {
   font-family: "Bahiana", sans-serif;
   font-weight: 400;
+  font-size: 4rem;
   font-style: normal;
-  font-size: 5rem;
   color: #303030;
   text-shadow: #bbbbbb 3px 3px 0px;
 }
 h1 {
   font-size: 1.5rem;
-  margin-bottom: 8px;
+  margin-bottom: 5px;
   font-family: "Arial";
 }
 h2 {
   font-size: 1.2rem;
-  margin-top: 16px;
   font-family: "Arial";
 }
 
@@ -69,8 +68,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 50px;
-  margin-top: 20px;
+  margin-bottom: 0px;
 }
 
 /* =========================================================
