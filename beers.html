@@ -24,47 +24,42 @@
         <h1>Beers</h1><br>
         <div id="list">
             <div class="item" data-name="Kirin Draft Beer (large size)" data-price="800">
-                <p><b>• Kirin Draft Beer</b>
-                    <br>(large size)</p>
-                <div class="price">800¥</div>
-                <!-- Quantity selector -->
+  <p><b>• Kirin Draft Beer</b><br>(large size)</p>
+  <div class="price">800¥</div>
+  <div class="qty-controls">
     <button class="qty-btn minus">-</button>
-    <input type="number" class="item-qty" min="1" value="1">
+    <input type="number" class="item-qty" min="0" value="0">
     <button class="qty-btn plus">+</button>
-    <!-- Add to cart -->
-    <button class="add-to-cart">🛒</button>
   </div>
 </div>
+
             </div>
             <div class="item" data-name="Kirin Draft Beer (regular size)" data-price="600">
                 <p><b>• Kirin Draft Beer</b> 
                     <br>(regular size)</p>
                     <div class="price">600¥</div>
-                <!-- Quantity selector -->
-                 <button class="qty-btn minus">-</button>
-    <input type="number" class="item-qty" min="1" value="1">
+                  <div class="qty-controls">
+    <button class="qty-btn minus">-</button>
+    <input type="number" class="item-qty" min="0" value="0">
     <button class="qty-btn plus">+</button>
-    <!-- Add to cart -->
-    <button class="add-to-cart">🛒</button>
   </div>
 </div>
             <div class="item" data-name="Heineken" data-price="700">
                 <p><b>• Heineken&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b> 
                     <br>(bottle)</p>
                     <div class="price">700¥</div>
-                <!-- Quantity selector -->
-                 <button class="qty-btn minus">-</button>
-    <input type="number" class="item-qty" min="1" value="1">
+               <div class="qty-controls">
+    <button class="qty-btn minus">-</button>
+    <input type="number" class="item-qty" min="0" value="0">
     <button class="qty-btn plus">+</button>
-    <!-- Add to cart -->
-    <button class="add-to-cart">🛒</button>
   </div>
 </div>
         </div>
     </main><br>
 
     <!-- Cart & Back buttons -->
-    <button id="btncart" class="btn primary">🛒</button> 
+    <button id="add-all-to-cart">Add All to Cart 🛒</button>
+
     <button id="btnback" class="btnback">Back ↩</button> 
 
     <script src="app.js"></script>

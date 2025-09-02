@@ -250,7 +250,14 @@ button,
   color: #fff;
   font-size: 1.1rem;
 }
-
+#add-all-to-cart {
+  width: 100%;
+  padding: 12px;
+  margin-top: 16px;
+  background-color: #f54802;
+  color: #fff;
+  font-size: 1.1rem;
+}
 #btnback {
   width: 100%;
   padding: 12px;
