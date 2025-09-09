@@ -6,12 +6,24 @@ if (cartBtn) {
   };
 }
 
-// Reset quantities and update Add All button when coming back
+// Reset only the beer quantities when coming back
 window.addEventListener('pageshow', () => {
+  // Reset all individual item quantities to 0
   document.querySelectorAll('.item-qty').forEach(input => {
     input.value = 0;
   });
-  updateAddAllButton();
+
+  // ✅ Keep "Add All to Cart" button synced with actual cart data
+  const cart = JSON.parse(localStorage.getItem("cart")) || [];
+  const totalQty = cart.reduce((sum, item) => sum + (item.qty || 0), 0);
+
+  const addAllBtn = document.getElementById('add-all-to-cart');
+  if (addAllBtn) {
+    addAllBtn.textContent = `Add All to Cart 🛒 (${totalQty})`;
+  }
+
+  // Also update the My Cart button count
+  updateCartCount();
 });
 
 // ↩️ Go back button
@@ -22,7 +34,7 @@ if (backBtn) {
   };
 }
 
-// Update the Add All button label
+// Update the Add All button label based on visible item quantities
 function updateAddAllButton() {
   const addAllBtn = document.getElementById('add-all-to-cart');
   if (!addAllBtn) return;
