@@ -8,29 +8,38 @@
   font-size: 1rem;
   
 }
-
 body {
-  background: #595959;
-  background: linear-gradient(0deg, rgb(29, 29, 29) 0%, rgb(255, 255, 255) 100%);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 1%, rgba(89, 89, 89, 1) 100%);
   padding: 10px 20px 0px 20px;
   min-height: 100vh;
   margin: 5px;
-  color: #303030; 
+}
+body.beers-page {
+  background: #000000;
+  background-image: url('images/beersback.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center top;
+
+  padding: 10px 20px 0px 20px;
+  min-height: 100vh;
+  margin: 5px;
+  color: #f3f3f3; 
+  text-shadow: #686868 2px 2px 0px;
   font-family: "Arial", sans-serif;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
-a {
-  text-decoration: none;
-  color: #F1FDFA;
-  font-family: "Arial";
-}
-
 /* =========================================================
    TYPOGRAPHY
    ========================================================= */
+a {
+  text-decoration: none;
+  color: #363636;
+  font-family: "Arial";
+  text-shadow: #acacac 1px 1px 0px;
+}
 
 header {
   padding: 5px 0px 10px 0px;
@@ -44,7 +53,7 @@ header {
   text-shadow: #bbbbbb 3px 3px 0px;
 }
 h1 {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   padding: 10px 0px 10px 0px;
   font-family: "Arial";
 }
@@ -103,7 +112,7 @@ header {
 }
 
 .nav-links li a {
-  color: white;
+  color: rgb(0, 0, 0);
   text-decoration: none;
   font-size: 1.2rem;
 }
@@ -189,6 +198,16 @@ header {
   border-radius: 8px;
 }
 
+#list {
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(92, 92, 92, 0.37);
+  backdrop-filter: blur(10px);
+  color: #d4d4d4;
+  text-align: center;
+  padding: 4px;
+  border-radius: 8px;
+  text-shadow: #bbbbbb 0px 0px 0px;
+}
 /* =========================================================
    CART ITEMS
    ========================================================= */
@@ -233,7 +252,14 @@ button,
 }
 
 /* Cart / Go back / Checkout / Payment Buttons */
-#btncart,
+#btncart {
+   width: 100%;
+  padding: 12px;
+  margin-top: 16px;
+  background-color: #119c50;
+  color: #fff;
+  font-size: 1.1rem;
+}
 #checkout {
   width: 100%;
   padding: 12px;

@@ -98,7 +98,7 @@ function updateCartCount() {
   if (cartBtn) {
     const cart = JSON.parse(localStorage.getItem("cart")) || [];
     const totalQty = cart.reduce((sum, item) => sum + (item.qty || 0), 0);
-    cartBtn.textContent = `My Cart 🛒 (${totalQty})`;
+    cartBtn.textContent = `View My Cart 🛒 (${totalQty})`;
   }
 }
 
