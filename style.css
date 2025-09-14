@@ -16,7 +16,7 @@ body {
 }
 body.beers-page {
   background: #000000;
-  background-image: url('images/beersback.png');
+  background-image: url('images/beerbackground.png');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center top;
@@ -47,7 +47,7 @@ header {
    header h1 {
   font-family: "Bahiana", sans-serif;
   font-weight: 400;
-  font-size: 4rem;
+  font-size: 3rem;
   font-style: normal;
   color: #303030;
   text-shadow: #bbbbbb 3px 3px 0px;
@@ -55,11 +55,11 @@ header {
 h1 {
   font-size: 1.8rem;
   padding: 10px 0px 10px 0px;
-  font-family: "Arial";
+  font-family: "Bahiana", sans-serif;
 }
 h2 {
   font-size: 1.2rem;
-  font-family: "Arial";
+  font-family: "Bahiana", sans-serif;
   padding: 20px 0px 5px 0px;
 }
 
@@ -91,7 +91,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #6e6e6e;
+  background-color: #9b9b9b;
   color: white;
   padding: 0.5rem 1rem;
   position: relative;
@@ -114,7 +114,8 @@ header {
 .nav-links li a {
   color: rgb(0, 0, 0);
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 2.2rem;
+  font-family: "Bahiana", sans-serif;
 }
 
 /* Hamburger (mobile only) */
@@ -138,7 +139,7 @@ header {
     right: -250px;
     height: 100%;
     width: 250px;
-    background-color: #464646;
+    background-color: #8b8b8b;
     flex-direction: column;
     padding: 2rem 1rem;
     gap: 1.5rem;
